@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt - Deçani Asphalt</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img class="background" src="assets/image-bg.jpg" alt="background" />
+
+  <header class="main-header">
+    <div class="nav-left">
+      <img src="assets/image1-logo.png" alt="Logo" class="logo" />
+    </div>
+    <nav class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="about.html">Rreth Nesh</a>
+      <a href="our-jobs.html">Punët Aktuale</a>
+      <a href="done-jobs.html">Punët e Përfunduara</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="page-section">
+    <form class="styled-form">
+      <h2>Na Kontaktoni</h2>
+      
+      <label for="name">Emri</label>
+      <input type="text" id="name" name="name" placeholder="Shkruani emrin tuaj" required>
+
+      <label for="surname">Mbiemri</label>
+      <input type="text" id="surname" name="surname" placeholder="Shkruani mbiemrin tuaj" required>
+
+      <label for="company">Emri i Firmës (opsional)</label>
+      <input type="text" id="company" name="company" placeholder="P.sh. Deçani Group">
+
+      <label for="topic">Zgjedh temën</label>
+      <select id="topic" name="topic" required>
+        <option value="">Zgjidh një temë...</option>
+        <option value="oferta">Kërkesë për ofertë</option>
+        <option value="partneritet">Partneritet</option>
+        <option value="ankesë">Ankesë</option>
+        <option value="tjetër">Tjetër</option>
+      </select>
+
+      <label for="message">Mesazhi juaj</label>
+      <textarea id="message" name="message" placeholder="Shkruani mesazhin këtu..." rows="6" required></textarea>
+
+      <button type="submit" class="btn">Dërgo Mesazhin</button>
+    </form>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
